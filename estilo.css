@@ -1,1 +1,268 @@
+/* VARIÁVEIS DO ESTILO FANZINE */
+:root {
+    --bg-papel: #EAEAEA;      /* Cinza claro reciclável/jornal */
+    --preto-tinta: #111111;   /* Preto fosco de impressora */
+    --branco-puro: #FFFFFF;
+    --detalhe-alerta: #FFCC00; /* Amarelo de fita de isolamento/obras */
+}
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222; /* Fundo externo da página */
+    color: var(--preto-tinta);
+    font-family: 'Courier Prime', monospace;
+    padding: 20px 10px;
+}
+
+/* Folha Centralizada do Zine */
+.zine-wrapper {
+    background-color: var(--bg-papel);
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 40px;
+    border: 4px solid var(--preto-tinta);
+    box-shadow: 12px 12px 0px var(--preto-tinta);
+}
+
+/* CABEÇALHO */
+.zine-header {
+    text-align: center;
+    border-bottom: 4px double var(--preto-tinta);
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.edicao-tag {
+    font-size: 12px;
+    font-weight: bold;
+    border: 2px solid var(--preto-tinta);
+    display: inline-block;
+    padding: 2px 8px;
+    background-color: var(--branco-puro);
+}
+
+.zine-header h1 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 84px;
+    font-weight: 900;
+    line-height: 0.9;
+    letter-spacing: -3px;
+    margin: 10px 0;
+}
+
+.sub-manchete {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* SEÇÃO HERO (COLAGEM) */
+.zine-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    border-bottom: 3px solid var(--preto-tinta);
+    padding-bottom: 30px;
+}
+
+.box-textura-foto img {
+    width: 100%;
+    filter: grayscale(1) contrast(2) brightness(0.9); /* Efeito Xerox/Impressão barata */
+    border: 3px solid var(--preto-tinta);
+}
+
+.legenda-foto {
+    font-size: 11px;
+    display: block;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+.caixa-alta {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 26px;
+    background-color: var(--preto-tinta);
+    color: var(--bg-papel);
+    padding: 10px;
+    line-height: 1.1;
+    margin-bottom: 15px;
+}
+
+.texto-maquina {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.btn-recorte {
+    display: inline-block;
+    background-color: var(--detalhe-alerta);
+    color: var(--preto-tinta);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: 2px solid var(--preto-tinta);
+    box-shadow: 4px 4px 0px var(--preto-tinta);
+    transition: 0.2s;
+}
+
+.btn-recorte:hover {
+    box-shadow: 0px 0px 0px var(--preto-tinta);
+    transform: translate(4px, 4px);
+}
+
+/* CADERNO DE PROJETOS */
+.zine-projetos, .zine-interativo, .zine-formulario {
+    padding: 30px 0;
+    border-bottom: 3px dashed var(--preto-tinta);
+}
+
+.titulo-rabiscado {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 28px;
+    margin-bottom: 20px;
+    background-color: var(--branco-puro);
+    display: inline-block;
+    padding: 2px 10px;
+    border: 2px solid var(--preto-tinta);
+}
+
+.tabela-projetos {
+    border: 3px solid var(--preto-tinta);
+    background-color: var(--branco-puro);
+}
+
+.linha-zine {
+    display: flex;
+    border-bottom: 2px solid var(--preto-tinta);
+}
+
+.linha-zine:last-child {
+    border-bottom: none;
+}
+
+.col-frente {
+    width: 200px;
+    background-color: var(--preto-tinta);
+    color: var(--branco-puro);
+    padding: 15px;
+    font-weight: bold;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+}
+
+.col-detalhe {
+    padding: 15px;
+    flex: 1;
+}
+
+.col-detalhe h3 {
+    margin-bottom: 5px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.col-detalhe p {
+    font-size: 13px;
+}
+
+/* SEÇÃO INTERATIVA */
+.botoes-perfil {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.btn-perfil {
+    background: var(--branco-puro);
+    border: 2px solid var(--preto-tinta);
+    padding: 10px 15px;
+    font-family: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-perfil:hover, .btn-perfil.selecionado {
+    background-color: var(--preto-tinta);
+    color: var(--bg-papel);
+}
+
+.caixa-datilografada {
+    background: #DFDFDF;
+    padding: 15px;
+    border: 2px solid var(--preto-tinta);
+    font-size: 14px;
+    min-height: 60px;
+}
+
+/* FORMULÁRIO ESTILO MATRIZ */
+.tarja-preta {
+    background-color: var(--preto-tinta);
+    color: var(--branco-puro);
+    padding: 8px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.campo-zine {
+    margin-bottom: 15px;
+}
+
+.campo-zine label {
+    display: block;
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.campo-zine input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid var(--preto-tinta);
+    background-color: var(--branco-puro);
+    font-family: inherit;
+}
+
+.btn-carimbo {
+    width: 100%;
+    background-color: var(--preto-tinta);
+    color: var(--branco-puro);
+    border: none;
+    padding: 15px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.btn-carimbo:hover {
+    background-color: var(--detalhe-alerta);
+    color: var(--preto-tinta);
+}
+
+/* FOOTER */
+.zine-footer {
+    padding-top: 30px;
+    text-align: center;
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .zine-hero { grid-template-columns: 1fr; }
+    .linha-zine { flex-direction: column; }
+    .col-frente { width: 100%; }
+    .zine-wrapper { padding: 15px; }
+    .zine-header h1 { font-size: 56px; }
+}
