@@ -1,1 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zine AgroForte - Quebrada Ecológica</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
 
+    <div class="zine-wrapper">
+        
+        <header class="zine-header">
+            <div class="edicao-tag">ZINE EDICÃO #01 // MAIO 2026</div>
+            <h1>AGROFORTE</h1>
+            <div class="sub-manchete">A REVOLUÇÃO VERDE VEIO DA PERIFERIA, NÃO DO ASFALTO.</div>
+        </header>
+
+        <section class="zine-hero">
+            <div class="box-textura-foto">
+                <img src="https://images.unsplash.com/photo-1592417817098-8f3d6eb19675?auto=format&fit=crop&w=800&q=80" alt="Horta Comunitária">
+                <span class="legenda-foto">Foto: Mutirão na Viela 4 - Autonomia Alimentar</span>
+            </div>
+            <div class="box-grito-manifesto">
+                <p class="caixa-alta">SUSTENTABILIDADE SEM SOBERANIA POPULAR É SÓ JARDINAGEM.</p>
+                <p class="texto-maquina">Nós equilibramos a balança. Enquanto o agronegócio exporta e destrói, a gente planta na laje, colhe na viela e alimenta quem tem fome hoje. Isso é o AgroForte.</p>
+                <a href="#fazer-parte" class="btn-recorte">QUERO SOMAR NO CORRE →</a>
+            </div>
+        </section>
+
+        <section class="zine-projetos">
+            <h2 class="titulo-rabiscado">DIÁRIO DE BORDO // AS AÇÕES</h2>
+            
+            <div class="tabela-projetos">
+                <div class="linha-zine">
+                    <div class="col-frente">01 / TECNOLOGIA POPULAR</div>
+                    <div class="col-detalhe">
+                        <h3>Hidroponia de Sucata</h3>
+                        <p>Tubos de PVC descartados e garrafas PET viram sistemas verticais de cultivo de alface e temperos nas paredes cegas dos becos.</p>
+                    </div>
+                </div>
+                <div class="linha-zine">
+                    <div class="col-frente">02 / MÃE TERRA</div>
+                    <div class="col-detalhe">
+                        <h3>Ouro Negro da Quebrada</h3>
+                        <p>Coleta de resíduos orgânicos orgânica porta a porta para alimentar nossas composteiras comunitárias. Lixo virando comida.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="zine-interativo">
+            <h2 class="titulo-rabiscado">INTERATIVO // QUAL É O SEU CORRE?</h2>
+            <p class="texto-maquina">Clique na área que você mais domina para ver como você se encaixa no nosso equilíbrio ambiental:</p>
+            
+            <div class="botoes-perfil">
+                <button class="btn-perfil" data-foco="Você vai liderar os sistemas de irrigação automatizados por celular e a montagem das calhas de chuva.">Fazer a Tecnologia Rodar</button>
+                <button class="btn-perfil" data-foco="Seu lugar é nos mutirões de sábado: preparar a terra, plantar as sementes e gerenciar as colheitas.">Botar a Mão na Terra</button>
+                <button class="btn-perfil" data-foco="Precisamos de você na logística de distribuição, na arte das sacolas e no diálogo com os moradores.">Fortalecer a Comunicação</button>
+            </div>
+            
+            <div id="painel-perfil" class="caixa-datilografada">
+                Selecione uma opção acima para ver sua missão no front...
+            </div>
+        </section>
+
+        <section id="fazer-parte" class="zine-formulario">
+            <div class="tarja-preta">DEIXE SUA MARCA NO MURO</div>
+            <form id="form-zine" class="form-fanzine">
+                <div class="campo-zine">
+                    <label>NOME / VULGO:</label>
+                    <input type="text" id="zine-nome" placeholder="Ex: Cria da Leste" required>
+                </div>
+                <div class="campo-zine">
+                    <label>COMO TE ACHAMOS? (ZAP/EMAIL):</label>
+                    <input type="text" id="zine-contato" placeholder="Ex: (11) 99999-9999" required>
+                </div>
+                <button type="submit" class="btn-carimbo">CARIMBAR INSCRIÇÃO ⚡</button>
+            </form>
+        </section>
+
+        <footer class="zine-footer">
+            <p>AGROFORTE - DOCUMENTO COLETIVO INDEPENDENTE - 2026</p>
+            <p>CÓDIGO LIVRE. IDEIA COMPARTILHADA. DISTRIBUA NA SUA QUEBRADA.</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
